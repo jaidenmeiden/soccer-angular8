@@ -72,7 +72,7 @@ export class PlayerDialogComponent implements OnInit {
     if (playerForm.valid) {
       playerFormValue.leftFooted = (playerFormValue.leftFooted === '' || playerFormValue.leftFooted === undefined) ? false : playerFormValue.leftFooted;
     } else {
-      if(playerFormValue.leftFooted === undefined) {
+      if(playerFormValue.leftFooted === null || playerFormValue.leftFooted === undefined) {
         playerFormValue.leftFooted = false;
       }
     }
